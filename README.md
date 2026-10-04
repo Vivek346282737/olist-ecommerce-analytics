@@ -1,10 +1,14 @@
 # E-Commerce Sales & Customer Analytics (Olist)
 
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square) ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square) ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square) ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square) ![Statistics](https://img.shields.io/badge/Statistics-1F4E79?style=flat-square)
+
 End-to-end analysis of 99K+ orders from Olist, a Brazilian e-commerce marketplace, using
 **SQL (PostgreSQL, SQLite), Python, Excel and Tableau**.
 
 **Live dashboard:** [Olist E-Commerce Sales & Delivery Dashboard (Tableau Public)](https://public.tableau.com/app/profile/vivek.prasad5963/viz/OlistE-CommerceSalesDeliveryDashboard/OlistE-CommerceSalesDeliveryDashboard)
 **Power BI version:** [powerbi-sales-analytics](https://github.com/Vivek346282737/powerbi-sales-analytics)
+
+[![Tableau dashboard](outputs/figures/tableau_dashboard.png)](https://public.tableau.com/app/profile/vivek.prasad5963/viz/OlistE-CommerceSalesDeliveryDashboard/OlistE-CommerceSalesDeliveryDashboard)
 
 ## Business questions
 
@@ -75,3 +79,7 @@ powershell -ExecutionPolicy Bypass -File .\run_all.ps1
 3. Optional, PostgreSQL: set `PG_BIN` to the folder with `psql`, `initdb` and `pg_ctl`, then run `python scripts/09_postgres.py`.
 
 Data: Brazilian E-Commerce Public Dataset by Olist (CC BY-NC-SA 4.0).
+
+## Author
+
+**Vivek Prasad** - [LinkedIn](https://www.linkedin.com/in/prasadvivek123) | [GitHub](https://github.com/Vivek346282737) | [Tableau Public](https://public.tableau.com/app/profile/vivek.prasad5963)
