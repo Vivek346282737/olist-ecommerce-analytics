@@ -1,7 +1,7 @@
 # E-Commerce Sales & Customer Analytics (Olist)
 
 End-to-end analysis of 99K+ orders from Olist, a Brazilian e-commerce marketplace, using
-**SQL, Python, Excel and Tableau**.
+**SQL (PostgreSQL, SQLite), Python, Excel and Tableau**.
 
 **Live dashboard:** [Olist E-Commerce Sales & Delivery Dashboard (Tableau Public)](https://public.tableau.com/app/profile/vivek.prasad5963/viz/OlistE-CommerceSalesDeliveryDashboard/OlistE-CommerceSalesDeliveryDashboard)
 **Power BI version:** [powerbi-sales-analytics](https://github.com/Vivek346282737/powerbi-sales-analytics)
@@ -42,7 +42,7 @@ End-to-end analysis of 99K+ orders from Olist, a Brazilian e-commerce marketplac
 
 | Area | What was done |
 |---|---|
-| **SQL** (SQLite) | 9-table relational model, joins, CTEs, window functions (LAG, RANK, ROW_NUMBER, NTILE), views |
+| **SQL** (PostgreSQL, SQLite) | 9-table relational model with primary keys, foreign keys and indexes; joins, CTEs, window functions (LAG, RANK, ROW_NUMBER, NTILE), views. The same 10 queries run on both engines and the results are cross-checked |
 | **Python** | Pandas, NumPy, Matplotlib, Seaborn, SciPy: data cleaning, EDA, RFM segmentation, cohort retention, hypothesis testing, linear regression |
 | **Excel** | KPI sheet (SUMIFS, COUNTIFS, AVERAGEIFS, VLOOKUP), pivot tables, pivot chart, slicer, conditional formatting |
 | **Tableau** | Interactive dashboard: KPIs, filled map, LOD expression, filter action, Top N filter |
@@ -51,9 +51,12 @@ End-to-end analysis of 99K+ orders from Olist, a Brazilian e-commerce marketplac
 ## Project structure
 
 ```
-sql/analysis_queries.sql     10 business queries
+sql/analysis_queries.sql            10 business queries (SQLite)
+sql/analysis_queries_postgres.sql   the same queries in PostgreSQL syntax
+sql/postgres_schema.sql             PostgreSQL schema: typed tables, keys, indexes
 scripts/                     01 load -> 02 SQL -> 03 cleaning + EDA -> 04 RFM, cohorts, stats
                              -> 05 Excel -> 06 regression -> 07 pivot tables -> 08 PowerPoint
+                             09 loads the data into PostgreSQL and re-runs the queries there
 outputs/                     SQL results, charts, data quality report, insights and regression summaries
 excel/                       Excel workbook with KPI formulas and pivot tables
 presentation/                Insights deck
@@ -68,5 +71,7 @@ data/raw/                    Kaggle CSV files (not committed)
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\run_all.ps1
 ```
+
+3. Optional, PostgreSQL: set `PG_BIN` to the folder with `psql`, `initdb` and `pg_ctl`, then run `python scripts/09_postgres.py`.
 
 Data: Brazilian E-Commerce Public Dataset by Olist (CC BY-NC-SA 4.0).
