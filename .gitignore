@@ -1,0 +1,5 @@
+data/raw/*.csv
+data/processed/
+data/*.db
+__pycache__/
+~$*.xlsx

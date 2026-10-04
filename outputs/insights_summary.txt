@@ -1,0 +1,44 @@
+INSIGHTS SUMMARY (use these exact numbers in resume / README / interview)
+========================================================================
+Period               : 2016-09 to 2018-10
+Total revenue (BRL)  : 13,221,498
+Delivered orders     : 96,478
+Unique customers     : 93,358
+Average order value  : 137.04
+Repeat customer rate : 3.00%
+Top 20% customers    : 56.6% of revenue
+Month-1 retention    : 0.48%
+Late delivery rate   : 8.11%
+
+Late delivery vs review score
+  On-time avg review : 4.29  (n=88,168)
+  Late avg review    : 2.57  (n=7,662)
+  Difference         : 1.73 points
+  Welch t-test       : t=89.38, p=0
+  Mann-Whitney U     : p=0
+  Spearman (delivery days vs review): rho=-0.235, p=0
+
+Top 5 categories by revenue
+  health_beauty                            1,233,132
+  watches_gifts                            1,166,177
+  bed_bath_table                           1,023,435
+  sports_leisure                             954,853
+  computers_accessories                      888,725
+
+Top 5 states by revenue
+  SP                                       5,067,633
+  RJ                                       1,759,651
+  MG                                       1,552,482
+  RS                                         728,897
+  PR                                         666,064
+
+RFM segments
+                      customers    revenue  revenue_share_pct
+segment                                                      
+High Value New            21419  5599496.0               42.0
+At Risk (High Value)      13788  3816095.0               29.0
+Hibernating               22559  1257985.0               10.0
+Recent                    21657  1202694.0                9.0
+Need Attention            11134   616818.0                5.0
+Loyal                      1865   422474.0                3.0
+Champions                   936   305935.0                2.0

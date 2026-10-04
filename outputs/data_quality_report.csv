@@ -1,0 +1,9 @@
+table,rows,columns,duplicate_rows,null_cells,most_null_column,most_null_count
+customers,99441,5,0,0,,0
+orders,99441,8,0,4908,order_delivered_customer_date,2965
+order_items,112650,7,0,0,,0
+payments,103886,5,0,0,,0
+reviews,99224,7,0,145903,review_comment_title,87656
+products,32951,9,0,2448,product_category_name,610
+sellers,3095,4,0,0,,0
+category_translation,71,2,0,0,,0

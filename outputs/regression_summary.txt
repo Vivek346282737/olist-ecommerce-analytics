@@ -1,0 +1,11 @@
+REGRESSION: what drives review score (OLS)
+============================================================
+Observations : 95,830
+R-squared    : 0.172
+                 coef  std_err  p_value
+intercept      4.9185   0.0105   0.0000
+delivery_days -0.0253   0.0005   0.0000
+is_late       -1.2201   0.0173   0.0000
+order_value   -0.0000   0.0000   0.2926
+freight_value  0.0005   0.0002   0.0371
+items         -0.3221   0.0079   0.0000
