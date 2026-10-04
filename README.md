@@ -45,7 +45,7 @@ End-to-end analysis of 99K+ orders from Olist, a Brazilian e-commerce marketplac
 | **SQL** (PostgreSQL, SQLite) | 9-table relational model with primary keys, foreign keys and indexes; joins, CTEs, window functions (LAG, RANK, ROW_NUMBER, NTILE), views. The same 10 queries run on both engines and the results are cross-checked |
 | **Python** | Pandas, NumPy, Matplotlib, Seaborn, SciPy: data cleaning, EDA, RFM segmentation, cohort retention, hypothesis testing, linear regression |
 | **Excel** | KPI sheet (SUMIFS, COUNTIFS, AVERAGEIFS, VLOOKUP), pivot tables, pivot chart, slicer, conditional formatting |
-| **Tableau** | Interactive dashboard: KPIs, filled map, LOD expression, filter action, Top N filter |
+| **Tableau** | Interactive dashboard: KPIs, filled map, LOD expression, filter action, parameter-driven Top N filter |
 | **PowerPoint** | 7-slide insights deck for stakeholders |
 
 ## Project structure
